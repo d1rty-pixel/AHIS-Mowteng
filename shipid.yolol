@@ -1,18 +1,14 @@
-:SIC=1
+:SIC=1 goto3
 
-:SIL=1
-:SILTH=60 :SILGS=18
-:SIX=4 :SIY=2 :SI="Ship ID" 
-:SIX=4 :SIY=8 :SI="Ship Info"
+:SIL=1 :SILTH=60 :SILGS=18 :SIX=4
+:SIY=2 :SI="Ship ID" :SIY=8 :SI="Ship Info" goto6
 
-:SIL=2
-:SILTH=180 :SILGS=20
-:SIX=4 :SIY=4 :SI="AHIS MOWTENG"
-:SIX=4 :SIY=5 :SI="AHIS20A01HAH"
-:SIX=4 :SIY=11 :SI="Mowteng Class"
-:SIX=4 :SIY=13 :SI="Heavy Asteroid" :SIY+=1 :SI="Hauler"
+:SIL=2 :SILTH=180 :SILGS=20
+:SIY=4 :SI="AHIS MOWTENG"
+:SIY=5 :SI="AHIS20A01HAH"
+:SIY=11 :SI="Mowteng Class"
+:SIY=13 :SI="Heavy Asteroid" :SIY+=1 :SI="Hauler" goto12
 
-:SIL=3
-:SILTH=60 :SILGS=25
+:SIL=3 :SILTH=60 :SILGS=25
 :SIX=5 :SIY=21 :SI="Antares" :SIY+=1 :SI="Heavy Industries"
 :ShipInfoChipWait=-1
