@@ -1,0 +1,15 @@
+// globals
+Batteries=40 goto6
+
+
+
+:AvailBattery=:StoredBatteryPower*Batteries
+:BatteryRatio=:StoredBatteryPower/:MaxBatteryPower*100
+if :BatteryRatio <= 10 then goto13 end
+if :BatteryRatio <= 20 then goto15 end
+:BatWarning=0 :BatWarningColor=0 :BatWarningBlink=1 goto5
+
+// ratio below 0.1
+:BatWarning=1 :BatWarningColor=0 :BatWarningBlink=1 goto5
+// ratio between 0.1 and 0.2
+:BatWarning=1 :BatWarningColor=1 :BatWarningBlink=0 goto5

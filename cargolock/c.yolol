@@ -1,0 +1,13 @@
+:RFCLSense=0 :RFCCSense=0 :RFCRSense=0 :CLBBeamState=0 
+:RFCLBlink=1 :RFCCBlink=1 :RFCRBlink=1
+if :RFCState == 0 then goto1 else goto5 end
+
+if :CLBBeamState == 0 then goto9 end
+:RFCLBlink=0.1 :RFCCBlink=0.1 :RFCRBlink=0.1 
+if :CLBBeamState == 1 then goto7 else goto1 end
+
+if :RFCLDist < :RFSL then :RFCLSense = 1 else :RFCLSense = 0 end
+if :RFCCDist < :RFSL then :RFCCSense = 1 else :RFCCSense = 0 end
+if :RFCRDist < :RFSL then :RFCRSense = 1 else :RFCRSense = 0 end
+if (:RFCLSense+:RFCCSense+:RFCRSense) < 3 then :CLBBeamState=0 end
+if :RFCState == 0 then goto1 else goto5 end

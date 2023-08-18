@@ -1,0 +1,5 @@
+:SDL=1 :SDLTH=60
+:SDX=3 :SDY=1 :SDI="[AHI] MOWTENG - STATUS"
+:SDX=3 :SDY=3 :SDI="FOB"
+:SDX=3 :SDY=6 :SDI="BAT"
+:SDChipWait = -1 goto5

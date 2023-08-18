@@ -1,0 +1,5 @@
+goto4
+// Navigation Sensitivity Control
+// Updates values of FCU controlled levers
+if :sm == 0 then goto4 end
+// dont know how to reliably do this..

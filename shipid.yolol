@@ -1,0 +1,18 @@
+:SIC=1
+
+:SIL=1
+:SILTH=60 :SILGS=18
+:SIX=4 :SIY=2 :SI="Ship ID" 
+:SIX=4 :SIY=8 :SI="Ship Info"
+
+:SIL=2
+:SILTH=180 :SILGS=20
+:SIX=4 :SIY=4 :SI="AHIS MOWTENG"
+:SIX=4 :SIY=5 :SI="AHIS20A01HAH"
+:SIX=4 :SIY=11 :SI="Mowteng Class"
+:SIX=4 :SIY=13 :SI="Heavy Asteroid" :SIY+=1 :SI="Hauler"
+
+:SIL=3
+:SILTH=60 :SILGS=25
+:SIX=5 :SIY=21 :SI="Antares" :SIY+=1 :SI="Heavy Industries"
+:ShipInfoChipWait=-1

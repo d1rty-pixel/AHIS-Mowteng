@@ -1,0 +1,5 @@
+:EIX=13 :EIY=3 :EI=:StoredTotalFuel
+:EIX=13 :EIY=4 :EI=:FuelRatio + "%"
+:EIX=13 :EIY=6 :EI=:AvailBattery
+:EIX=13 :EIY=7 :EI=:BatteryRatio + "%"
+goto1

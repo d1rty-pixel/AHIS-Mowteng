@@ -1,0 +1,6 @@
+:SRDL=1
+:SRDLTH=180 :SRDLC=1 :SRDLGS=25 :SRDX=3
+:SRDY=2 :SRDI="------ Status ------"
+:SRDY=5 :SRDI="---- Materials -----"
+:MaterialScannerChipWait=0
+goto6

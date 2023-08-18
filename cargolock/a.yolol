@@ -1,0 +1,13 @@
+:RFALSense=0 :RFACSense=0 :RFARSense=0 :CLABeamState=0 
+:RFALBlink=1 :RFACBlink=1 :RFARBlink=1
+if :RFAState == 0 then goto1 else goto5 end
+
+if :CLABeamState == 0 then goto9 end
+:RFALBlink=0.1 :RFACBlink=0.1 :RFARBlink=0.1 
+if :CLABeamState == 1 then goto7 else goto1 end
+
+if :RFALDist < :RFSL then :RFALSense = 1 else :RFALSense = 0 end
+if :RFACDist < :RFSL then :RFACSense = 1 else :RFACSense = 0 end
+if :RFARDist < :RFSL then :RFARSense = 1 else :RFARSense = 0 end
+if (:RFALSense+:RFACSense+:RFARSense) < 3 then :CLABeamState=0 end
+if :RFAState == 0 then goto1 else goto5 end

@@ -1,0 +1,4 @@
+:EIX=3 :EIY=1 :EI="[AHI] MOWTENG - ECAM"
+:EIX=3 :EIY=3 :EI="FOB"
+:EIX=3 :EIY=6 :EI="BAT"
+:ECAMBasicChipWait = -1 goto4 // stop now

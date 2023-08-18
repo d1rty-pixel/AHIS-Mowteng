@@ -1,0 +1,9 @@
+:PropRatio=:GasNetworkStoredResource/:GasNetworkMaxResource*100
+if :PropRatio <= 10 then goto7 end
+if :PropRatio <= 20 then goto9 end
+:PropWarning=0 :PropWarningColor=0 :PropWarningBlink=1 goto1
+
+// ratio below 0.1
+:PropWarning=1 :PropWarningColor=0 :PropWarningBlink=1 goto5
+// ratio between 0.1 and 0.2
+:PropWarning=1 :PropWarningColor=1 :PropWarningBlink=0 goto5

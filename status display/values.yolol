@@ -1,0 +1,7 @@
+:SDL=2 :SDLTH=210
+:SDX=13 :SDY=4 :SDI=:StoredTotalFuel
+:SDX=13 :SDY=5 :SDI=:FuelRatio + "%    "
+:SDX=13 :SDY=7 :SDI=:Battery
+:SDX=13 :SDY=8 :SDI=:BatteryRatio + "%    "
+:SDX=13 :SDY=15 :SDI=:Speed
+goto2

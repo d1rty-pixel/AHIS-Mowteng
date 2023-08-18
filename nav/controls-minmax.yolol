@@ -1,0 +1,19 @@
+goto11
+// Navigation Sensitivity Control
+// Adjusts the min and max output value of FCU controlled levers 
+//
+// Change lever min and max output field names like so:
+// 1. Example: 'FcuForward' (only max field for regular levers)
+//  - lever max output: FcuForwardMaxOutput
+// 2. Example: 'FcuUpDown' (min and max for centering levers)
+//  - lever min output: FcuUpDownMinOutput
+//  - lever max output: FcuUpDownMaxOutput
+v=:s*100/:smax
+:FcuForwardMaxOutput=v
+:FcuBackwardMaxOutput=v
+:FcuUpDownMaxOutput=v :FcuUpDownMinOutput=v*-1
+:FcuRightLeftMaxOutput=s*scale :FcuRightLeftMinOutput=v*-1
+:FcuRotationalRollMaxOutput=v :FcuRotationalRollMinOutput=v*-1
+:FcuRotationalYawMaxOutput=v :FcuRotationalYawMinOutput=v*-1
+:FcuRotationalPitchMaxOutput=v :FcuRotationalPitchMinOutput=v*-1
+goto11

@@ -1,0 +1,14 @@
+goto14
+// Navigation Sensitivity Control
+// Adjusts sensitivity setting
+//
+// Devices needed:
+// - Memory Relay:
+//   - create field 's' and map to 'Sensitivity' (same network)
+// - Progress bar:
+//   - change 'PanelState' to 'Sensitivity'
+//   - change 'PanelMaxValue' to 'smax', set to 10 initially
+//   - change 'Sensitivity' value to ~30% relative to smax
+// - Switch:
+//   - change 'SwitchState' to 'sm'
+:s+=:sm if :s<1 then :s=1 end if :s>:smax then :s = :smax end goto14

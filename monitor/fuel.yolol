@@ -1,0 +1,14 @@
+// globals
+FuelRods=24 
+:MaxFuel=:MaxRawFuel*FuelRods
+
+:StoredTotalFuel=:StoredRawFuel*FuelRods
+:FuelRatio=:StoredRawFuel/:MaxRawFuel*100
+if :FuelRatio <= 10 then goto13 end
+if :FuelRatio <= 20 then goto15 end
+:FuelWarning=0 :FuelWarningColor=0 :FuelWarningBlink=1 goto5
+
+// ratio below 0.1
+:FuelWarning=1 :FuelWarningColor=0 :FuelWarningBlink=1 goto5
+// ratio between 0.1 and 0.2
+:FuelWarning=1 :FuelWarningColor=1 :FuelWarningBlink=0 goto5
