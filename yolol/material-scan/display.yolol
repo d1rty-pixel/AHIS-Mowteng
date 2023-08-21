@@ -1,0 +1,15 @@
+:MSDL=1
+:MSDLTH=180 :MSDLGS=25
+:MSDLC=1 :MSDX=3
+:MSDY=2 :MSDI="------ Status ------"
+:MSDY=5 :MSDI="---- Materials -----"
+
+:MSDL=2
+:MSDLTH=60 :MSDLGS=25
+:MSDLC=1 :MSDX=3 :MSDY=3
+
+goto 12+:MSS
+:MSDI="Idle" goto11
+:MSDI="Scanning" goto11
+goto11
+goto7

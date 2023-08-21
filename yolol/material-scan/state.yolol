@@ -1,0 +1,3 @@
+:MSSIdle=0 :MSSScanning=1 :MSSDone=2 :MSSClear=3
+:MSS=:MSSIdle
+:MSS=:Scan goto3

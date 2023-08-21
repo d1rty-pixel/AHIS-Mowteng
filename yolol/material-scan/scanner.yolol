@@ -1,0 +1,8 @@
+goto 1+:Scan
+:DoScan=1 :MSDY=5
+goto 3+(:ScanResult > 0)
+:MSDY+=1 :MSDI=:Material
+:MSDY+=1 :MSDX++ :MSDI=:Vol + " kv / " + :Vol/1727 + "s" :MSDX--
+if :Index < :ScanResult then :Index++ goto3 else goto7 end
+:Reset=1 :Scan=0 :MSS=:MSSDone goto1
+
